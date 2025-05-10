@@ -52,11 +52,11 @@ This project has not only enhanced your Python skills but has also given you han
 
 # Server Health Monitoring and Alerting System
 
-## Overview
+
+# Overview
 This project automates the process of monitoring server health (CPU, memory, and disk usage) and sends email alerts if the usage exceeds certain thresholds (e.g., CPU > 80%, Memory > 75%). It uses Python and several libraries to gather system stats and send notifications via email.
 
 ## Prerequisites
-To run this project, you'll need:
 - Python 3.x installed on your system.
 - Required Python libraries:
   - `psutil` (for system health monitoring)
@@ -69,3 +69,24 @@ Install the required libraries using `pip`:
 
 ```bash
 pip install psutil
+```
+
+## Script Overview
+
+The main script includes the following functions:
+1. **System Health Monitoring**: Monitors CPU, memory, and disk usage.
+2. **Threshold Checking**: Alerts you if any resource usage exceeds defined thresholds.
+3. **Email Alerting**: Sends email alerts when a threshold is exceeded.
+4. **Logging**: Tracks the health checks and alert actions in a log file.
+
+## Running the Script
+To run the monitoring script:
+
+1. Ensure your Python environment is set up and dependencies are installed.
+2. Run the script:
+   
+   ```bash
+   python server_health_monitor.py
+   ```
+
+The script will continuously monitor the server's health, check resource usage, and send an email alert if any thresholds are exceeded.
